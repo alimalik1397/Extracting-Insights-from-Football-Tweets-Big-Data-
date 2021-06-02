@@ -1,0 +1,4 @@
+hdfs dfs -put ~/tweet_received/* /tweet_rec && mv ~/tweet_received/* ~/tweet_processed
+hive -f myhivefile.hql
+pig -useHCatalog mypigfile.pig
+spark-shell --jars hive-hcatalog-core.jar -i mysparkfile.scala
